@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de pessoas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="search-panel" aria-labelledby="page-title">
+        <div class="heading">
+          <span class="eyebrow">Busca inteligente</span>
+          <h1 id="page-title">Buscador de pessoas</h1>
+          <p>Encontre pessoas pelo nome, idade ou combine os dois filtros.</p>
+        </div>
+
+        <div class="search-form">
+          <label for="search-nome">
+            Nome
+            <input type="text" id="search-nome" placeholder="Digite o nome" />
+          </label>
+
+          <label for="search-idade">
+            Idade
+            <input type="number" id="search-idade" placeholder="Digite a idade" min="0" />
+          </label>
+
+          <div class="actions">
+            <button id="search-button" class="button primary" type="button">Buscar</button>
+            <button id="add-button" class="button secondary" type="button">Adicionar</button>
+          </div>
+        </div>
+
+        <ul id="results" class="results" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
